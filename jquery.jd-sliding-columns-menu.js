@@ -9,6 +9,7 @@
 (function ($){
 	
 	var options = {
+		version: '0.1',
 		width: 150,
 		backButtonLabel: 'Back',
 		classNamePrefix: 'jd-scm-'
