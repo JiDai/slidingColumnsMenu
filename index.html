@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>jQuery Sliding Columns Menu Demo</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.jd-sliding-columns-menu.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#jd-scm-container').jdScMenu()
+		});
+	</script>
+</head>
+
+<body>
+<div>
+<ul id="jd-scm-container">
+	<li>Item a1</li>
+	<li>Item a2</li>
+	<li>Item a3
+		<ul>
+			<li>Item b1</li>
+  			<li>Item b2</li>
+  			<li><a href="#" onclick="alert(''); void(0);return false;">Item b3</a>
+				<ul>
+					<li>Item c1</li>
+					<li>Item c2</li>
+					<li>Item c3</li> 				
+				</ul>
+			</li>
+			<li>Item b4</li>
+ 		</ul>
+	  </li>
+  <li>Item a4</li>
+</ul>
+</div>
+</body>
